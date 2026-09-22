@@ -1,14 +1,7 @@
-Aqui está a versão aprimorada e atualizada do **`README.md`** do projeto **StudyFlow**.
-
-Esta versão reflete todas as últimas atualizações do projeto, incluindo a **persistência em banco de dados embarcado (SQLite)**, **Programação Orientada a Objetos (POO)** com modelos encapsulados, a **Tela de Cadastro (`RegisterScreen`)** e os tratamentos de erros avançados, além de remover os conflitos do Git (`<<<<<<< HEAD`).
-
----
-
 # StudyFlow 📚
 
 Um projeto educacional desenvolvido com **React Native** e **Expo** para ensinar alunos a criar um aplicativo mobile completo. O app aborda desde a navegação entre telas, componentização e gerenciamento de estado até **persistência de dados em banco embarcado (SQLite)** e conceitos avançados de **Programação Orientada a Objetos (POO)**.
 
----
 
 ## 📚 Sobre o Projeto
 
@@ -27,7 +20,6 @@ O **StudyFlow** foi estruturado como material didático para disciplinas de dese
 * ✅ Tratar exceções e erros de runtime (`try/catch`, validação de `UNIQUE constraint`).
 * ✅ Implementar formulários de **Login** e **Cadastro (`RegisterScreen`)** integrados ao banco.
 
----
 
 ## 🚀 Tecnologias e Bibliotecas
 
@@ -37,7 +29,6 @@ O **StudyFlow** foi estruturado como material didático para disciplinas de dese
 * **JavaScript (ES6+)** - Uso avançado de classes, atributos privados (`#`), métodos estáticos, herança (`extends`) e herança com `super()`.
 * **react-native-safe-area-context** - Garantia de área segura em diferentes telas e entalhes de dispositivos.
 
----
 
 ## 📋 Funcionalidades do Aplicativo
 
@@ -69,7 +60,6 @@ O **StudyFlow** foi estruturado como material didático para disciplinas de dese
 * Permite iniciar e encerrar sessões de estudo alternando dinamicamente o estado global da tela.
 * Botão de encerramento de sessão e opção de logout.
 
----
 
 ## 🛠️ Como Executar o Projeto
 
