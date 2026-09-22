@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # StudyFlow 📚
 
 Um projeto educacional desenvolvido com React Native e Expo para ensinar alunos a criar um aplicativo mobile com navegação entre telas, login local, componentes reutilizáveis, estado, props, animação simples e estilos organizados.
@@ -417,3 +418,7 @@ Sugestão de sequência para aula:
 Sinta-se livre para modificar e adaptar este projeto às suas necessidades de ensino.
 
 Desenvolvido como material educacional para ensino de React Native, Expo, componentes, props, estado e navegação.
+=======
+# StudyFlow-master
+Projeto Exemplo UC13
+>>>>>>> 7c16e388217b9e0349a3999130a1d79e4d1d5230
