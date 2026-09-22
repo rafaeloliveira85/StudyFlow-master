@@ -1,0 +1,63 @@
+export class User { 
+    #email; 
+    #password; 
+ 
+    constructor(name, email, password) { 
+        this.name = name || 'Estudante'; 
+         
+        // Chamada aos métodos de validação que podem disparar exceções 
+        this.setEmail(email); 
+        this.setPassword(password); 
+    } 
+ 
+    setEmail(email) { 
+        const normalizedEmail = (email || '').trim().toLowerCase(); 
+ 
+        // Tratamento de Exceção: Campo Vazio 
+        if (!normalizedEmail) { 
+            throw new Error('O campo de e-mail e obrigatorio.'); 
+        } 
+ 
+        // Tratamento de Exceção: Formato Inválido 
+        if (!normalizedEmail.includes('@') || !normalizedEmail.includes('.')) { 
+            throw new Error('Informe um e-mail valido (ex: usuario@dominio.com).'); 
+        } 
+ 
+        // Tratamento de Exceção: Credencial de teste 
+        if (normalizedEmail !== 'aluno@senac.com') { 
+            throw new Error('E-mail nao cadastrado no sistema de testes.'); 
+        } 
+ 
+        this.#email = normalizedEmail; 
+    } 
+ 
+    setPassword(password) { 
+        // Tratamento de Exceção: Campo Vazio 
+        if (!password) { 
+            throw new Error('O campo de senha e obrigatorio.'); 
+        } 
+ 
+        // Tratamento de Exceção: Tamanho mínimo 
+        if (password.length < 4) { 
+            throw new Error('A senha deve ter pelo menos 4 caracteres.'); 
+        } 
+ 
+        // Tratamento de Exceção: Credencial incorreta 
+        if (password !== '1234') { 
+            throw new Error('Senha incorreta. Tente novamente.'); 
+        } 
+ 
+        this.#password = password; 
+    } 
+ 
+    getEmail() { 
+        return this.#email; 
+    } 
+ 
+    toObject() { 
+        return { 
+            name: this.name, 
+            email: this.#email, 
+        }; 
+    } 
+}
